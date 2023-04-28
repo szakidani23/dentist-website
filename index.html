@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="icon" type="image/x-icon" href="images/tooth.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/cb48e5d5ae.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Dr. Fogdoki</title>
+  </head>
+  <body>
+      <!--0. SZEKCIÓ MENÜ HTML -->
+      <section id="header">
+        <nav class="navbar">
+          <a href="index.html"><img src="images/fehereslogo.png" class="logo"></a>
+          <div class="nav-links" id="navLinks">
+          <i class="fa fa-times hidemenu" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#section-3">Szolgáltatások</a></li>
+            <li><a href="#section-7">Árak</a></li>
+            <li><a href="#section-9">Elérhetőségek</a></li>
+            <a href="index.html"><img src="images/hungary.png"></a>
+            <a href="german.html"><img src="images/germany.png"></a>
+            <a href="english.html"><img src="images/united-kingdom.png"></a>
+          </ul>
+        </div>
+        <i class="fa fa-bars showmenu" onclick="showMenu()"></i>
+        </nav>
+        
+        <!--1. Hero SZEKCIÓ HTML -->
+        <div class="hero">
+          <div class="hero-left">
+            <hr>
+            <h1>Mosolyogjon bátran!</h1>
+            <p><span>FIGYELEM!</span> Ez egy fiktív vállalkozás weboldala.</p>
+            <p class="hero-left-text">Ne szenvedjen vele, keressen fel inkább minket és megoldjuk a fogbajt!</p>
+          </div>
+          <div class="hero-right">
+            <div class="contact-form">
+              <form action="form-handler.php" method="post">
+                <h4>Foglaljon időpontot!</h4>
+              <p>Töltse ki az űrlapot és visszahívjuk!</p>
+              <hr class="hr-line">
+              <input type="text" name="name" placeholder="Az ön neve" required>
+              <input type="email" name="email" placeholder= "Az ön email címe" required>
+              <input type="tel" name="tel" placeholder="Telefonszám" required>
+              <input type="text" name="subject" placeholder="Mi után érdeklődik? Pl. Fogszabályzás" required>
+              <textarea name="message" rows="6" placeholder="Kérem röviden ismertesse a panaszát!"></textarea>
+              <div class="checkbox">
+                <span class="checkbox-text">Megértettem és elfogadom az adatkezelési tájékoztatót!</span>
+                <input type="checkbox" id="adatkezelesiCheckbox" required>
+              </div>
+              <button class="cta-btn" type="submit"><i class="fa-solid fa-phone-volume fa-bounce fa-sm" style="color: #f5f5f5;"></i> Kérem a visszahívást! </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--2. Szájhigiénia Section HTML -->
+
+      <section id="section-2">
+        <div class="container">
+          <div class="left-col">
+            <img src="images/fogi.webp">
+            <img src="images/fogdokineni.webp">
+          </div>
+          <div class="right-col">
+            <h2>A szájhigiénia fontossága</h2>
+            <hr>
+            <p>
+              <span>A szájhigiénia</span> az egészséges fogak alapvető feltétele. Ez a szájüreg betegségei megelőzésének legolcsóbb és leghatékonyabb módja. Megelőző szerepet játszik a fogszuvasodással, betegségekkel szemben, melyeket baktériumok, a fogak korai öregedése (paradontózis) és az ínygyulladás (gingivitis) okoznak.
+              <br><br>
+              <span>A rendszeres fogmosás</span> sajnos <span>nem egyenlő a megfelelő szájhigiénia fenntartásával.</span> Sokan azt hiszik, ha esténként fogkefét ragadnak, az bőven elég, de ez korántsem így van.
+              <br><span>Időnként bizony el kell látogatni a fogorvoshoz!</span>
+            </p>
+          </div>
+        </div>
+        <div class="tel-cta">
+          <div class="left-col-tel-cta">
+            <h3>Fogászati problémája van?</h3>
+            <p>Esetleg csak kérdezni szeretne tőlünk valamit?</p>
+          </div>
+          <div class="right-col-tel-cta">
+            <button class="cta-btn"><i class="fa-solid fa-phone-volume fa-bounce fa-sm" style="color: #f5f5f5;"></i> Hívás most!</button>
+          </div>
+        </div>
+      </section>
+
+      <!--3. Cards Section HTML -->
+
+      <section id="section-3">
+        <div class="title-div">
+          <h2>Megoldás minden fogászati problémára</h2>
+          <hr class="hr-line">
+          <p>Válassza ki a szolgáltatást és kérjen időpontot!</p>
+        </div>
+        <div class="cards">
+          <div class="card-row">
+            <div class="card">
+              <img class="card-icon" src="images/icon1.png">
+              <h4>Fogászati implantátumok</h4>
+              <p>A fogászati implantátum valójában egy műgyökér, amely az elvesztett fog gyökerét pótolja. Tulajdonképpen egy csavarra hasonlít, de a gyógyulás után olyan erősen áll a helyén, mint az eredeti fogaid.</p>
+            </div>
+            <div class="card">
+              <img class="card-icon" src="images/icon2.png">
+              <h4>Kozmetikai fogászat</h4>
+              <p>A kozmetikai fogászat az esztétikai fogászat továbbfejlesztett változata. Célja az ideális, tökéletes mosoly megteremtése a hibátlan fogsor kialakításán keresztül. A kozmetikai fogászat egy külön diszciplína, sajátos látásmóddal, módszerekkel, eszközökkel.</p>
+            </div>
+            <div class="card">
+              <img class="card-icon" src="images/icon3.png">
+              <h4>Gyökérkezelés</h4>
+              <p>Speciális fogászati eljárás, mely az utolsó esély a beteg fog megtartására. Ilyenkor a fog már elhalt, de a kezelés eredményeképp még teljes értékű része maradhat a fogsornak. Jellemző tünet a fogbél gyulladása és az erős fájdalom, ami még azokat is eljuttatja a rendelőbe, akik amúgy félnek a fogorvostól.</p>
+            </div>
+          </div>
+          <div class="card-row">
+            <div class="card">
+              <img class="card-icon" src="images/icon4.png">
+              <h4>Fogfehérítés</h4>
+              <p>A fogfehérítés tulajdonképpen egy kémiai folyamat, melynek során a fehérítőanyag reakcióba lép a fogakat elszínező anyagokkal. A fehérítőanyagban lévő iniciátort ezután egy UV-fényforrással aktiváljuk. A fogakat elszínező kromogének kémiai és optikai tulajdonsága az oxidáció hatására változik, így <b>az eredmény egy gyönyörű, fehér fogsor.</b></p>
+            </div>
+            <div class="card">
+              <img class="card-icon" src="images/icon5.png">
+              <h4>Fogászati Röntgen</h4>
+              <p>A fogászati beavatkozásokat megelőzően fontos, hogy a fogorvos megfelelő adatokkal rendelkezzen a páciens szájüregének aktuális állapotáról, hiszen így tud helyes diagnózist felállítani.
+
+                Nem mindig elengedő a szájüreg alapos vizsgálata hiszen sokszor az íny alatti területeken található a probléma. Ennek feltárására a legkiválóbb eszköz a röntgen.</p>
+            </div>
+            <div class="card">
+              <img class="card-icon" src="images/icon6.png">
+              <h4>Fogszabályozás</h4>
+              <p>Erre általában a fogak vagy az állcsont helytelen pozíciója miatt van szükség. A kezelés nem kizárólag esztétikai jellegű, hiszen egy rendezetlen fogsor számos fogászati, beszéddel, evéssel összefüggő probléma kialakulását is elősegítheti. Éppen ezért fontos, hogy akár a fogváltás időszakától, akár felnőttkorban, de foglalkozzunk a kérdéssel.</p>
+            </div>
+          </div>
+           <a class="buttonlink" href="#section-9"><button class="cta-btn cta-btn-time-schedule">
+            <i class="fa-solid fa-calendar-days fa-beat"></i>&nbsp;&nbsp;Időpontot foglalok!
+          </button></a> 
+        </div>
+      </section>
+
+      <!--4. Feedback Section HTML -->
+
+      <section id="section-4">
+        <div class="title-div">
+          <h2>Ők már jártak nálunk</h2>
+          <hr class="hr-line">
+        </div>
+        <div class="feedbacks">
+          <div class="feedbacks-col1">
+            <div class="feedback-card-vertical">
+              <img src="images/akarki.webp">
+              <p>Egyszerűen zseniális csapat. Fogfehérítésen voltam náluk. Azóta is csillognak-villognak a fogaim! Köszönöm nektek!</p>
+              <h4>Barbi</h4>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="feedbacks-col2">
+            <div class="feedback-card">
+              <div class="feedback-img-div">
+                <img src="images/debora.webp">
+              </div>
+              <div class="feedback-content-div">
+                <p>
+                  SOS gyökérkezelésre mentem nyaralás előtt. Hála nekik nem duzzadt fejjel kellett a nyaralást eltöltenem. Köszi és sok puszi! Debi</p>
+                <h4>Debóra</h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="feedback-card">
+              <div class="feedback-img-div">
+                <img src="images/peter.webp">
+              </div>
+              <div class="feedback-content-div">
+                <p>Régóta járok Dr. Fogdoki rendelőjébe. A fogszabályzási folyamatom végeztével nagyon szép eredményt értünk el. Ez a képen is látszik. Végre szépek és rendezettek a fogaim! Köszi és pacsi! Peti</p>
+                <h4>Péter</h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="title-div">
+          <h3>Elégedett volt velünk?</h3>
+          <p>Kérem ossza meg a tapasztalatait!</p>
+          <hr class="hr-line">
+          <div class="social-icons">
+            <a href="https://google.com" target="_blank"><i class="fa-brands fa-google"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!--5. About Us Section HTML -->
+
+      <section id="section-5">
+        <div class="icon-line">
+          <i class="fa-solid fa-tooth"></i>
+        </div>
+        <div class="about-us">
+          <div class="about-us-col1">
+            <h2>Pár szó rólunk</h2>
+            <p>Egy professzionális fogász csapat, baráti társaság vagyunk. A történetünk 2008-ban kezdődik, amikor elvégeztük az egyetemet. Baráti kötelékből, csoporttársakból, kollégákká fejlődtünk. Természetesen a havi egy sörözés nem marad el mai napig sem. 😉<br>
+              Több mint 14 éves tapasztalattal, szakmai odaadással és barátsággal fogadjuk kedves pácienseinket.</p>
+            <hr>
+            <a href="https://www.youtube.com/watch?v=u2sv9nP_nH8" target="_blank"><i class="fa-brands fa-youtube"></i> TIPP a fogmosáshoz - Így moss fogat hatékonyan!</a>
+            <img src="images/fehereslogo.png">
+          </div>     
+          <div class="about-us-col2">
+            <img src="images/hatter.webp">
+            <p>Dr. Fogdoki</p>
+          </div>     
+        </div>
+      </section>
+      
+      <!--6. GALLERY Section HTML -->
+
+      <section id="section-6">
+        <div class="title-div">
+          <i class="fa-solid fa-teeth-open shaking-teeth"></i>
+          <h2>Pillanatok munka közben</h2>
+          <hr class="hr-line">
+        </div>
+        <div class="image-slider-container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img id="slide-1" src="images/1.webp">
+              <img id="slide-2" src="images/2.webp">
+              <img id="slide-3" src="images/3.webp">
+              <img id="slide-4" src="images/4.webp">
+              <img id="slide-5" src="images/6.webp">
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+              <a href="#slide-5"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--7. PriceList Section HTML -->
+
+      <section id="section-7">
+          <div class="prices-content">
+            <div class="title-div">
+              <h2>Árlista</h2>
+              <h3 class="sub-title">Nem csak minőségi, de pénztárca barát is!</h3>
+              <hr class="hr-line">
+              <p class="sub-text">A lent nem szereplő fogászati igényekre árajánlatot adunk!</p>
+            </div>
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Röntgen</p>
+                <span></span>
+                <p class="detail-price">24.990 Ft</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Mindenre kiterjedő: Arcüreg, Teleröntgen, CT felvétel.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Tömés</p>
+                <span></span>
+                <p class="detail-price">15.500 Ft / fog</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Professzionális fehér tömés.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Gyökérkezelés</p>
+                <span></span>
+                <p class="detail-price">30.000 Ft / alk.</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">1,2,3 csatornás fogak.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Implantátum - felmérés</p>
+                <span></span>
+                <p class="detail-price">15.000 Ft</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Implantátummal, szájsebészettel kapcsolatos állapotfelmérés, konzultáció.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Implantátum - vizsgálat</p>
+                <span></span>
+                <p class="detail-price">32.000 Ft/db</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Genetikai vizsgálat</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Implantátum - behelyezés</p>
+                <span></span>
+                <p class="detail-price">140.000 Ft / db</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Cirkónium implantátum elkészítése, majd behelyezése.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Fogkő eltávolítás</p>
+                <span></span>
+                <p class="detail-price">20.000 Ft</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Teljes fogsorra vonatkozóan.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Fluoridos fogkezelés</p>
+                <span></span>
+                <p class="detail-price">12.000 Ft</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">választható extra kiegészítő kezelés fogkő eltávolításhoz.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Fogszabályozás - felmérés</p>
+                <span></span>
+                <p class="detail-price">12.000 Ft</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Állapotfelmérés fogszabályozáshoz. Az összeg majd levonásra kerül a fogszabályozó készülék árából.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Fogszabályozás - Lenyomatvétel</p>
+                <span></span>
+                <p class="detail-price">18.000 Ft</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Fogszabályozás - Aktiválás</p>
+                <span></span>
+                <p class="detail-price">13.000 Ft</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Fogszabályozás - Felragasztás</p>
+                <span></span>
+                <p class="detail-price">17.000 Ft</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Kivehető készülék</p>
+                <span></span>
+                <p class="detail-price">99.990 Ft</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Kivehető fogszabályozó készülék egy fogívre optimalizálva.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Bimaxilláris készülék</p>
+                <span></span>
+                <p class="detail-price">124.990 Ft</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Rendelői fogfehérítés</p>
+                <span></span>
+                <p class="detail-price">44.990 Ft</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">ClearWhite Oxygen peroxidmentes fogfehérítés.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Bölcsességfog eltávolítás</p>
+                <span></span>
+                <p class="detail-price">23.000 Ft</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Alapszintű, sebészeti beavatkozást nem igénylő eltávolítás.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Bölcsességfog eltávolítás</p>
+                <span></span>
+                <p class="detail-price">47.990 Ft</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Másodszintű, sebészeti beavatkozást igénylő eltávolítás.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Fogeltávolítás</p>
+                <span></span>
+                <p class="detail-price">19.000 Ft / fog</p>
+              </div>
+            </div>   
+               <a class="buttonlink" href="#section-9"><button class="cta-btn cta-btn-time-schedule">
+                <i class="fa-solid fa-calendar-days fa-beat"></i>&nbsp;&nbsp;Időpontot foglalok!
+              </button></a> 
+          </div>   
+      </section>
+
+      <!--8. FAQ Section HTML -->
+
+      <section id="section-8">
+        <div class="faq">
+          <div class="faq-left-col">
+            <h2>Gyakori kérdések</h2>
+            <ul id="faq-table">
+              <li>
+                <label for="first">Meddig tart a fogfehérítés hatása?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="first" checked>
+                <div class="faq-answer">
+                  <p>Általában egy évig kitart, de ezt befolyásolják a táplálkozási és egyéb szokások. Például aki sok kávét fogyaszt vagy dohányzik, hamarabb elszíneződnek a fogai. A kezelés félévente megismételhető.</p>
+
+                </div>
+              </li>
+
+              <li>
+                <label for="second">Az implantátum biztonságos?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="second">
+                <div class="faq-answer">
+                  <p>Igen, az implantáció ma már nagyon fejlett, bevált technológia.</p>
+
+                </div>
+              </li>
+
+              <li>
+                <label for="third">Hogyan kérjek időpontot?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="third">
+                <div class="faq-answer">
+                  <p>Töltse ki a kapcsolati űrlapot vagy hívjon minket telefonon.<br><br>
+                    <a href="tel:+3612345678910">Kattintson a híváshoz!</a></p>
+
+                </div>
+              </li>
+
+              <li>
+                <label for="fourth">Hogyan távolítják el a fogkövet?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="fourth">
+                <div class="faq-answer">
+                  <p>A fogkövet ultrahangos készülékkel, teljesen fájdalommentesen távolítjuk el. A készülék feje 27.000-37.000 Hz frekvenciájú rezgéssel észrevétlenül leválasztja a fogkövet a fogfelszínről.
+                    A frekvencia hatására képződő légbuborékok széttörik azt a fogkövet is, amit már hagyományos módszerekkel nem lehet eltávolítani. Ezzel az eljárással sem a fogzománc, sem a fogíny nem sérül meg. Végül puha polírozó kefével polírozzuk a fogakat, amitől csillogóan simává válik a felületük, így később a szennyeződések és a fogkő is nehezebben tapadnak meg rajtuk.
+                    Az így kialakított egészséges állapot rendszeres és helyes fogmosási technikával hosszú időn át fenntartható.</p>
+                </div>
+              </li>
+
+              <li>
+                <label for="fifth">Honnan tudom, hogy van e fogkövem?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="fifth">
+                <div class="faq-answer">
+                  <p>Ha megnézi a tükörben az alsó fogívének belső felét és ott sárgás, vagy barna elszíneződést lát a fog nyakánál, fogak között vagy máshol, akkor az nagy valószínűséggel fogkő.
+                    Ha azt érzékeli, hogy a lehelet nem makulátlan, vagy vérzik a fog fogmosáskor, esetleg spontán vérzik, sok esetben ezeknek a hátterében is a fogkő állhat. Ha sok fogköve van, akkor előfordulhat, hogy kis fehér darabkák esnek le, azt hiheti, hogy valamelyik fogból törtek le kicsi darabok, de valójában az is lehet, hogy a fogkő töredezik és esik le. A fogkő megbújhat olyan helyeken, ahol nem is látható első ránézésre. A fogkő tartós jelenléte ínygyulladást, vérzést és a fogak korai elvesztését okozhatja, ezért érdemes szakemberhez fordulni és rendszeresen ellenőriztetni.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="faq-right-col">
+            <img src="images/7.webp">
+          </div>
+        </div>
+      </section>
+
+      <!--9. CONTACT Section HTML -->
+
+      <section id="section-9">
+        <div class="contact">
+          <div class="contact-left">
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
+            <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="contact-middle">
+            <h2>Elérhetőségek</h2>
+            <hr class="hr-contact">
+
+            <a href="tel:+3612345678910">
+            <div class="contact-line">
+              <div class="contact-icon">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Hívjon minket!</h4>
+                <p>+3612345678910</p>
+              </div>
+            </div>
+          </a>
+            
+            <a href="mailto:info@emailcím.hu">
+            <div class="contact-line">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope-open-text"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Írjon nekünk!</h4>
+                <p>info@emailcím.hu</p>
+              </div>
+            </div>
+          </a>
+
+            <div class="contact-line">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Helyileg</h4>
+                <p>1234 Város, utca 99.</p>
+              </div>
+            </div>
+
+            <div class="contact-line">
+              <div class="contact-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Nyitvatartás</h4>
+                <p>Hétfő-Péntek: 08:00 - 17:00<br><br>Szombat-Vasárnap: Zárva
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="contact-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5443382745666!2d-0.12181368423018868!3d51.5032287796344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c71a3d651f%3A0x72367f97712bc0ee!2sLondon%20Eye!5e0!3m2!1shu!2shu!4v1682243497236!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <hr>
+          <p>Copyright © 2023 Szaki Webdesign</p>
+          <p>Szeretnél hasonló weboldalt a vállalkozásodnak? <br>Látogass el ide: <a href=""> szakidesign.hu </a></p>
+        </div>
+      </section>
+
+      <script>
+
+        var navLinks = document.getElementById("navLinks");
+  
+        function showMenu() {
+          navLinks.style.right = "0";
+        }
+        function hideMenu() {
+          navLinks.style.right = "-400px";
+        }
+  
+      </script>
+
+  </body>
+
+</html>

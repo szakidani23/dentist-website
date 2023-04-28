@@ -1,0 +1,327 @@
+@media only screen and (min-width: 1000px) {
+  .navbar .hidemenu,
+  .navbar .showmenu {
+  display:none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  /* SECTION 1 */
+
+  h2 {
+    font-size:36px;
+  }
+
+  body {
+    background: #fff;
+    overflow-x:hidden;
+  }
+
+  .nav-links ul li {
+    display:block;
+    margin:none;
+    justify-content:flex-start;
+    margin-top: 20px;
+  }
+  .nav-links {
+    position:fixed;
+    background-image: linear-gradient(180deg, #29d8db 0%, #01578c 100%);
+    height: 100vh;
+    width: 200px;
+    top:0;
+    right: -200px;
+    text-align: left;
+    z-index:10;
+  }
+
+  .navbar .hidemenu,
+  .navbar .showmenu {
+    display:block;
+    color: #fff;
+    margin:10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding:30px;
+    margin-top: 20px;
+  }
+
+  .logo {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero {
+    display:block;
+  }
+  .hero-left {
+    width: 100%;
+    text-align: center;
+    margin:auto;
+  }
+
+  .hero-left hr {
+    width: 25%;
+    margin:20px auto;
+  }
+
+  .hero-left h1 {
+    margin:0;
+    text-align:center;
+    font-size: 42px;
+  }
+
+  .hero-left p {
+    text-align: center;
+  }
+
+  .hero-left-text {
+    width:90%;
+    text-align: center;
+    font-size:22px;
+  }
+  .hero-right {
+    width: 95%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .contact-form {
+    width: 90%;
+    padding:20px 10px;
+    margin-left: 15px;
+    
+  }
+
+  .contact-form button {
+    font-size: 16px;
+  }
+}
+
+  @media only screen and (max-width: 1260px) {
+    .card-row {
+      display:block;
+      max-width:100%;
+      padding:0;
+    }
+
+    .cards {
+      margin:auto;
+      max-width:100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      width: 80%;
+      max-width: 95%;
+      display:block;
+      margin:20px 0;
+    }
+
+    .faq {
+      display:block;
+      margin:0;
+      padding:0;
+    }
+
+    .faq-right-col {
+      display:none;
+    }
+
+    .contact {
+      display:block;
+      padding:0;
+    }
+  
+    .contact-left {
+      display:flex;
+      flex-direction: row;
+      height: 80px;
+      gap:20px;
+      width: 100%;
+    }
+  
+    .contact-left i {
+      font-size: 20px;
+    }
+  
+    .contact-middle {
+      width:78%;
+      margin:auto;
+    }
+  
+    .contact-middle hr {
+      width: 85%;
+    }
+  
+    .contact-middle h2,hr {
+      margin-left: -10px;
+    }
+
+    .contact-middle hr {
+      margin-bottom:0;
+    }
+  
+    .contact-right iframe {
+      margin:auto;
+      width:100%;
+    }
+  
+    .copyright {
+      display:block;
+    }
+  
+    .copyright p {
+      line-height: 22px;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+
+  .container {
+    display:block;
+    padding:0;
+  }
+
+  .navbar ul img {
+    margin-top:25px;
+  }
+
+  .left-col {
+    margin-top: 3rem;
+  }
+
+  .right-col {
+    padding-top: 0;
+    padding-left: 0;
+    margin-left:2rem;
+    margin-top:-5rem;
+    margin-bottom:5rem;
+  }
+
+  .right-col h2 {
+    width: 100%;
+    font-size: 36px;
+    margin: 16px 0;
+  
+  }
+
+  .right-col p {
+    margin-bottom: 180px;
+  }
+
+  .left-col img:nth-child(2) {
+    transform: translate(5%, -30%); 
+    width:80%;
+  }
+
+  .left-col img:nth-child(1) {
+    width:80%;
+    transform: translate(15%, 0);
+  }
+
+  .tel-cta {
+    max-width: 100%;
+    display:block;
+    margin:auto;
+    padding-left:1rem;
+  }
+
+  .cta-btn {
+    margin:16px;
+  }
+
+  .title-div {
+    text-align: center;
+    margin: 60px auto 0 auto;
+    display:block;
+    width: 100%;
+  }
+
+  .title-div hr {
+    margin:20px auto;
+  }
+
+  .title-div p {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  
+
+  .cta-btn-time-schedule {
+    display:block;
+    margin: auto;
+  }
+
+  .feedbacks {
+    display: block;
+    margin:0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .feedback-card-vertical {
+    display:none;
+  }
+
+  .feedback-card {
+    width: 88%;
+  }
+
+  .icon-line {
+    margin:20px;
+  }
+
+  .about-us {
+    display: block;;
+  }
+
+  .about-us-col1 {
+    margin-left: 35px;
+    width: 85%;
+  }
+
+  .about-us-col2 p{
+    padding-bottom: 20px;
+  }
+
+  .pricelist {
+    text-align:left;
+  }
+
+  .pricelist-line {
+    width: 90%;
+  }
+
+  .detail-line-div {
+    display:block;
+    width: 90%;
+  }
+
+  .prices-content button {
+    margin-top: 20px;
+  }
+
+  .faq {
+    display:block;
+    margin:auto;
+  }
+
+  .faq-left-col {
+    width:80%;
+    margin:auto;
+  }
+
+  .faq-right-col img {
+    animation:none;
+    width:80%;
+    margin:40px; 
+  }
+
+}
+  

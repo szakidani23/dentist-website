@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="icon" type="image/x-icon" href="images/tooth.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/cb48e5d5ae.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Dr. Zahn</title>
+  </head>
+  <body>
+      <!--0. SZEKCIÓ MENÜ HTML -->
+      <section id="header">
+        <nav class="navbar">
+          <a href="index.html"><img src="images/fehereslogo.png" class="logo"></a>
+          <div class="nav-links" id="navLinks">
+          <i class="fa fa-times hidemenu" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#section-3">Dienstleistungen</a></li>
+            <li><a href="#section-7">Preise</a></li>
+            <li><a href="#section-9">Kontakt</a></li>
+            <a href="index.html"><img src="images/hungary.png"></a>
+            <a href="german.html"><img src="images/germany.png"></a>
+            <a href="english.html"><img src="images/united-kingdom.png"></a>
+          </ul>
+        </div>
+        <i class="fa fa-bars showmenu" onclick="showMenu()"></i>
+        </nav>
+        
+        <!--1. Hero SZEKCIÓ HTML -->
+        <div class="hero">
+          <div class="hero-left">
+            <hr>
+            <h1>Lächeln Sie ruhig!</h1>
+            <p><span>WARNUNG!</span> Dies ist die Website eines fiktiven Unternehmens.</p>
+            <p class="hero-left-text">Leiden Sie nicht darunter, wenden Sie sich stattdessen an uns und wir werden Ihre Zahnschmerzen lösen!</p>
+          </div>
+          <div class="hero-right">
+            <div class="contact-form">
+              <form action="form-handler.php" method="post">
+                <h4>Buchen Sie einen Termin!</h4>
+              <p>Füllen Sie das Formular aus und wir werden Sie zurückrufen!</p>
+              <hr class="hr-line">
+              <input type="text" name="name" placeholder="Ihr Name" required>
+              <input type="email" name="email" placeholder= "Ihre E-Mail Adresse" required>
+              <input type="tel" name="tel" placeholder="Rufnummer" required>
+              <input type="text" name="subject" placeholder="Woran sind Sie interessiert? Z.B. Kieferorthopädie" required>
+              <textarea name="message" rows="6" placeholder="Bitte beschreiben Sie kurz Ihre Beschwerde!"></textarea>
+              <div class="checkbox">
+                <span class="checkbox-text">Ich habe den Datenschutzhinweis verstanden und akzeptiere ihn!</span>
+                <input type="checkbox" id="adatkezelesiCheckbox" required>
+              </div>
+              <button class="cta-btn" type="submit"><i class="fa-solid fa-phone-volume fa-bounce fa-sm" style="color: #f5f5f5;"></i> Ruf mich an! </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--2. Szájhigiénia Section HTML -->
+
+      <section id="section-2">
+        <div class="container">
+          <div class="left-col">
+            <img src="images/fogi.webp">
+            <img src="images/fogdokineni.webp">
+          </div>
+          <div class="right-col">
+            <h2>Die Bedeutung der Mundhygiene</h2>
+            <hr>
+            <p>
+              <span>Mundhygiene</span>  ist für gesunde Zähne unerlässlich. Sie ist der billigste und wirksamste Weg, um Mundkrankheiten vorzubeugen. Sie beugt Karies, bakteriell bedingten Krankheiten, vorzeitiger Zahnalterung (Parodontitis) und Zahnfleischentzündungen vor.
+              <br><br>
+              <span>Regelmäßiges Bürsten</span> ist leider <span>nicht dasselbe wie eine gute Mundhygiene.</span> Viele Menschen denken, dass es ausreicht, sich nachts die Zahnbürste anzuziehen, aber das stimmt nicht.
+              <br><span>Sie müssen von Zeit zu Zeit zum Zahnarzt gehen!</span>
+            </p>
+          </div>
+        </div>
+        <div class="tel-cta">
+          <div class="left-col-tel-cta">
+            <h3>Haben Sie ein Zahnproblem?</h3>
+            <p>Möchten Sie von uns etwas fragen?</p>
+          </div>
+          <div class="right-col-tel-cta">
+            <button class="cta-btn"><i class="fa-solid fa-phone-volume fa-bounce fa-sm" style="color: #f5f5f5;"></i> Jetzt Anrufen!</button>
+          </div>
+        </div>
+      </section>
+
+      <!--3. Cards Section HTML -->
+
+      <section id="section-3">
+        <div class="title-div">
+          <h2>Lösung für alle Zahnprobleme</h2>
+          <hr class="hr-line">
+          <p>Wählen Sie Ihre Dienstleistung und vereinbaren Sie einen Termin!</p>
+        </div>
+        <div class="cards">
+          <div class="card-row">
+            <div class="card">
+              <img class="card-icon" src="images/icon1.png">
+              <h4>Zahnimplantate</h4>
+              <p>Ein Zahnimplantat ist eigentlich eine künstliche Wurzel, die die Wurzel eines verlorenen Zahns ersetzt. Es ähnelt eigentlich einer Schraube, aber nach der Einheilung sitzt es genauso fest wie Ihr ursprünglicher Zahn.</p>
+            </div>
+            <div class="card">
+              <img class="card-icon" src="images/icon2.png">
+              <h4>Kosmetische Zahnmedizin</h4>
+              <p>Die kosmetische Zahnheilkunde ist eine Weiterentwicklung der ästhetischen Zahnheilkunde. Sie zielt darauf ab, ein ideales, perfektes Lächeln durch die Herstellung von makellosem Zahnersatz zu erreichen. Die kosmetische Zahnheilkunde ist eine eigenständige Disziplin mit einer eigenen Vision, eigenen Methoden und eigenen Instrumenten.</p>
+            </div>
+            <div class="card">
+              <img class="card-icon" src="images/icon3.png">
+              <h4>Wurzelkanalbehandlung</h4>
+              <p>Ein spezielles zahnmedizinisches Verfahren, das die letzte Chance darstellt, einen erkrankten Zahn zu retten. In diesem Fall ist der Zahn bereits abgestorben, kann aber durch die Behandlung noch ein vollwertiger Teil des Gebisses bleiben. Typische Symptome sind Entzündungen des Zahnfachs und starke Schmerzen, die selbst Menschen, die sonst Angst vor dem Zahnarzt haben, in die Zahnarztpraxis bringen können.</p>
+            </div>
+          </div>
+          <div class="card-row">
+            <div class="card">
+              <img class="card-icon" src="images/icon4.png">
+              <h4>Zahnaufhellung</h4>
+              <p>Ein Zahnimplantat ist eigentlich eine künstliche Wurzel, die die Wurzel eines verlorenen Zahns ersetzt. Es ähnelt eigentlich einer Schraube, aber nach der Einheilung sitzt es genauso fest wie Ihre ursprünglichen Zähne.</p>
+            </div>
+            <div class="card">
+              <img class="card-icon" src="images/icon5.png">
+              <h4>Zahnärztliche Röntgenbilder</h4>
+              <p>Die kosmetische Zahnheilkunde ist eine Weiterentwicklung der ästhetischen Zahnheilkunde. Sie zielt darauf ab, ein ideales, perfektes Lächeln durch die Herstellung von makellosem Zahnersatz zu erreichen. Die kosmetische Zahnheilkunde ist eine eigenständige Disziplin mit einer eigenen Vision, eigenen Methoden und eigenen Instrumenten.</p>
+            </div>
+            <div class="card">
+              <img class="card-icon" src="images/icon6.png">
+              <h4>Kieferorthopädie</h4>
+              <p>Dies ist in der Regel auf eine falsche Stellung der Zähne oder des Kieferknochens zurückzuführen. Die Behandlung ist nicht nur ästhetisch, da ein unregelmäßiges Gebiss auch zu einer Reihe von Zahn-, Sprach- und Essproblemen beitragen kann. Deshalb ist es wichtig, das Problem anzugehen, entweder ab dem Zeitpunkt des Zahnersatzes oder im Erwachsenenalter.</p>
+            </div>
+          </div>
+           <a class="buttonlink" href="#section-9"><button class="cta-btn cta-btn-time-schedule">
+            <i class="fa-solid fa-calendar-days fa-beat"></i>&nbsp;&nbsp;Termin Buchen!
+          </button></a> 
+        </div>
+      </section>
+
+      <!--4. Feedback Section HTML -->
+
+      <section id="section-4">
+        <div class="title-div">
+          <h2>Sie waren schon bei uns</h2>
+          <hr class="hr-line">
+        </div>
+        <div class="feedbacks">
+          <div class="feedbacks-col1">
+            <div class="feedback-card-vertical">
+              <img src="images/akarki.webp">
+              <p>Einfach ein brillantes Team. Ich habe mir die Zähne bleichen lassen. Seitdem sind meine Zähne strahlend schön! Vielen, vielen Dank!</p>
+              <h4>Barbara</h4>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="feedbacks-col2">
+            <div class="feedback-card">
+              <div class="feedback-img-div">
+                <img src="images/debora.webp">
+              </div>
+              <div class="feedback-content-div">
+                <p>
+                  Ich habe mich vor meinem Urlaub bei SOS einer Wurzelbehandlung unterzogen. Dank ihnen musste ich den Urlaub nicht mit einem geschwollenen Kopf verbringen. Vielen Dank und Küsse! Debi</p>
+                <h4>Debora</h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="feedback-card">
+              <div class="feedback-img-div">
+                <img src="images/peter.webp">
+              </div>
+              <div class="feedback-content-div">
+                <p>Ich komme schon seit langem in die Praxis von Dr. Zahn. Nachdem mein kieferorthopädischer Eingriff abgeschlossen war, hatten wir ein sehr schönes Ergebnis. Sie können es auf dem Bild sehen. Meine Zähne sind endlich schön und ordentlich! Vielen Dank und herzlichen Glückwunsch! Peti</p>
+                <h4>Peter</h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="title-div">
+          <h3>Waren Sie mit uns zufrieden?</h3>
+          <p>Bitte teilen Sie Ihre Erfahrungen mit!</p>
+          <hr class="hr-line">
+          <div class="social-icons">
+            <a href="https://google.com" target="_blank"><i class="fa-brands fa-google"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!--5. About Us Section HTML -->
+
+      <section id="section-5">
+        <div class="icon-line">
+          <i class="fa-solid fa-tooth"></i>
+        </div>
+        <div class="about-us">
+          <div class="about-us-col1">
+            <h2>Über Uns</h2>
+            <p>Wir sind ein professionelles Team von Zahnärzten, eine freundliche Gruppe von Freunden. Unsere Geschichte beginnt im Jahr 2008, als wir unser Studium abgeschlossen haben. Wir haben uns von Freunden zu Teamkollegen und Kollegen entwickelt. Das einmal im Monat Teambildung Bierchen gibt es natürlich auch heute noch. :) <br><br> Mit mehr als 14 Jahren Erfahrung empfangen wir unsere lieben Patienten mit professioneller Hingabe und Freundschaft.</p>
+            <hr>
+            <a href="https://www.youtube.com/watch?v=u2sv9nP_nH8" target="_blank"><i class="fa-brands fa-youtube"></i> Tipps zum Zähneputzen - So putzen Sie effektiv!</a>
+            <img src="images/fehereslogo.png">
+          </div>     
+          <div class="about-us-col2">
+            <img src="images/hatter.webp">
+            <p>Dr. Zahn</p>
+          </div>     
+        </div>
+      </section>
+      
+      <!--6. GALLERY Section HTML -->
+
+      <section id="section-6">
+        <div class="title-div">
+          <i class="fa-solid fa-teeth-open shaking-teeth"></i>
+          <h2>Momente bei der Arbeit</h2>
+          <hr class="hr-line">
+        </div>
+        <div class="image-slider-container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img id="slide-1" src="images/1.webp">
+              <img id="slide-2" src="images/2.webp">
+              <img id="slide-3" src="images/3.webp">
+              <img id="slide-4" src="images/4.webp">
+              <img id="slide-5" src="images/6.webp">
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+              <a href="#slide-5"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--7. PriceList Section HTML -->
+
+      <section id="section-7">
+        <div class="prices-content">
+          <div class="title-div">
+            <h2>Preisliste</h2>
+            <h3 class="sub-title">Nicht nur hochwertig, sondern auch Geldbörse freundlich!</h3>
+            <hr class="hr-line">
+            <p class="sub-text">Die Preise können je nach Wechselkursschwankungen variieren!</p>
+          </div>
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Röntgenstrahlen</p>
+              <span></span>
+              <p class="detail-price">68 €</p>
+            </div>
+            <div class="detail-line-div">
+              <p class="detail-line">Umfassend: Gesichtshöhle, Fernröntgenaufnahme, CT-Scan.</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Zahnfüllung</p>
+              <span></span>
+              <p class="detail-price">42 € / Zahn</p>
+            </div>
+            <div class="detail-line-div">
+              <p class="detail-line">Professionelle weiße Füllung.</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Wurzelkanalbehandlung</p>
+              <span></span>
+              <p class="detail-price">82 € </p>
+            </div>
+            <div class="detail-line-div">
+              <p class="detail-line">Erste, zweite und dritte Kanalzähne.</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Implantat - Übersicht</p>
+              <span></span>
+              <p class="detail-price">41 €</p>
+            </div>
+            <div class="detail-line-div">
+              <p class="detail-line">Beurteilung und Beratung zu Implantaten und Oralchirurgie.</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Implantat - Test</p>
+              <span></span>
+              <p class="detail-price"> 87 € / St.</p>
+            </div>
+            <div class="detail-line-div">
+              <p class="detail-line">Genetische Erhebung.</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Implantat - Einsetzen</p>
+              <span></span>
+              <p class="detail-price">380 € / St. </p>
+            </div>
+            <div class="detail-line-div">
+              <p class="detail-line">Vorbereitung und Einsetzen eines Zirkoniumimplantats.</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Entfernung von Zahnbelag</p>
+              <span></span>
+              <p class="detail-price">55 €</p>
+            </div>
+            <div class="detail-line-div">
+              <p class="detail-line">Für das ganze Gebiss.</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Fluorid-Zahnbehandlung</p>
+              <span></span>
+              <p class="detail-price">32 €</p>
+            </div>
+            <div class="detail-line-div">
+              <p class="detail-line">Mit optionale zusätzliche Behandlung zur Zahnsteinentfernung.</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Kieferorthopädie - Übersicht</p>
+              <span></span>
+              <p class="detail-price">32 €</p>
+            </div>
+            <div class="detail-line-div">
+              <p class="detail-line">Zustandsbewertung für die kieferorthopädische Behandlung. Der Betrag wird dann vom Preis der kieferorthopädischen Apparatur abgezogen.</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Kieferorthopädie - Abdrucknahme</p>
+              <span></span>
+              <p class="detail-price">46 €</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Kieferorthopädie - Aktivierung</p>
+              <span></span>
+              <p class="detail-price">36 €</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Kieferorthopädie - Aktivierung</p>
+              <span></span>
+              <p class="detail-price">43 €</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Herausnehmbare Vorrichtung</p>
+              <span></span>
+              <p class="detail-price">250 €</p>
+            </div>
+            <div class="detail-line-div">
+              <p class="detail-line">Herausnehmbare Zahnspange, optimiert für einen Zahnbogen.</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Bimaxillargerät</p>
+              <span></span>
+              <p class="detail-price">315 €</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Zahnaufhellung in der Praxis</p>
+              <span></span>
+              <p class="detail-price">115 €</p>
+            </div>
+            <div class="detail-line-div">
+              <p class="detail-line">ClearWhite Sauerstoffperoxidfreie Zahnaufhellung.</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Entfernung von Weisheitszähnen</p>
+              <span></span>
+              <p class="detail-price">55 €</p>
+            </div>
+            <div class="detail-line-div">
+              <p class="detail-line">Einfache, nicht-chirurgische Entfernung.</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Entfernung von Weisheitszähnen</p>
+              <span></span>
+              <p class="detail-price">110 €</p>
+            </div>
+            <div class="detail-line-div">
+              <p class="detail-line">Entfernung der zweiten Stufe, die einen chirurgischen Eingriff erfordert.</p>
+            </div>
+          </div>
+
+          <div class="pricelist">
+            <div class="pricelist-line">
+              <p class="detail-title">Zahnextraktion</p>
+              <span></span>
+              <p class="detail-price">50 € / Zahn </p>
+            </div>
+          </div>   
+             <a class="buttonlink" href="#section-9"><button class="cta-btn cta-btn-time-schedule">
+              <i class="fa-solid fa-calendar-days fa-beat"></i>&nbsp;&nbsp;Termin Buchen!
+            </button></a> 
+        </div>   
+    </section>
+
+      <!--8. FAQ Section HTML -->
+
+      <section id="section-8">
+        <div class="faq">
+          <div class="faq-left-col">
+            <h2>Häufig gestellte Fragen</h2>
+            <ul id="faq-table">
+              <li>
+                <label for="first">Wie lange hält die Wirkung des Bleachings an?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="first" checked>
+                <div class="faq-answer">
+                  <p>In der Regel dauert sie ein Jahr, aber das hängt von den Ernährungsgewohnheiten und anderen Faktoren ab. Wer zum Beispiel viel Kaffee trinkt oder raucht, dessen Zähne verfärben sich früher. Die Behandlung kann alle sechs Monate wiederholt werden.</p>
+
+                </div>
+              </li>
+
+              <li>
+                <label for="second">Ist das Implantat sicher?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="second">
+                <div class="faq-answer">
+                  <p>Ja, die Implantation ist heute eine sehr fortschrittliche, bewährte Technologie.</p>
+
+                </div>
+              </li>
+
+              <li>
+                <label for="third">Wie kann ich einen Termin vereinbaren?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="third">
+                <div class="faq-answer">
+                  <p>Füllen Sie das Kontaktformular aus oder rufen Sie uns an.<br><br>
+                    <a href="tel:+3612345678910">Zum Anrufen klicken!</a></p>
+
+                </div>
+              </li>
+
+              <li>
+                <label for="fourth">Wie wird Zahnstein entfernt?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="fourth">
+                <div class="faq-answer">
+                  <p>Die Entfernung des Zahnsteins erfolgt völlig schmerzfrei mit einem Ultraschallgerät. Der Kopf des Geräts nutzt eine Vibrationsfrequenz von 27.000-37.000 Hz, um den Zahnstein unmerklich von der Zahnoberfläche zu entfernen.
+                    Die durch die Frequenz erzeugten Luftblasen lösen auch den Zahnstein auf, der mit herkömmlichen Methoden nicht entfernt werden kann. Dieses Verfahren schädigt weder den Zahnschmelz noch das Zahnfleisch. Abschließend werden die Zähne mit einer weichen Polierbürste poliert, wodurch sie eine glänzende, glatte Oberfläche erhalten, an der sich Schmutz und Zahnstein schwerer festsetzen können.
+                    Dieser gesunde Zustand kann durch regelmäßiges und richtiges Zähneputzen auf Dauer erhalten werden.</p>
+                </div>
+              </li>
+
+              <li>
+                <label for="fifth">Woher weiß ich, ob ich Zahnseide habe?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="fifth">
+                <div class="faq-answer">
+                  <p>Wenn Sie im Spiegel die Innenseite Ihres unteren Zahnbogens betrachten und eine gelbliche oder braune Verfärbung um den Zahnhals, zwischen den Zähnen oder an anderen Stellen sehen, handelt es sich höchstwahrscheinlich um Zahnstein.
+                    Wenn Sie bemerken, dass Ihr Atem nicht makellos ist oder dass Ihre Zähne beim Zähneputzen bluten oder sogar spontan bluten, kann dies in vielen Fällen ebenfalls auf Zahnstein zurückzuführen sein. Wenn Sie viel Zahnstein haben, kann es sein, dass kleine weiße Stücke abfallen, oder Sie denken, dass kleine Stücke von einem Ihrer Zähne abgebrochen sind, aber es kann tatsächlich Zahnstein sein, der sich auflöst und abfällt. Zahnstein kann sich an Stellen verstecken, wo er auf den ersten Blick nicht sichtbar ist. Hartnäckiger Zahnstein kann zu Zahnfleischentzündungen, Zahnfleischbluten und vorzeitigem Zahnverlust führen. Es lohnt sich also, einen Fachmann aufzusuchen und sich regelmäßig untersuchen zu lassen.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="faq-right-col">
+            <img src="images/7.webp">
+          </div>
+        </div>
+      </section>
+
+      <!--9. CONTACT Section HTML -->
+
+      <section id="section-9">
+        <div class="contact">
+          <div class="contact-left">
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
+            <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="contact-middle">
+            <h2>Kontakt</h2>
+            <hr class="hr-contact">
+
+            <a href="tel:+3612345678910">
+            <div class="contact-line">
+              <div class="contact-icon">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Rufen Sie uns an!</h4>
+                <p>+3612345678910</p>
+              </div>
+            </div>
+          </a>
+            
+            <a href="mailto:info@emailcím.hu">
+            <div class="contact-line">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope-open-text"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Kontakt per E-Mail</h4>
+                <p>info@emailcím.hu</p>
+              </div>
+            </div>
+          </a>
+
+            <div class="contact-line">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Standort</h4>
+                <p>1234 Stadt Straße 99.</p>
+              </div>
+            </div>
+
+            <div class="contact-line">
+              <div class="contact-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Öffnungszeit</h4>
+                <p>Mo - Fr: 08:00 - 17:00<br><br>Sa- So: Geschlossen
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="contact-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.4743592150708!2d16.39584401565181!3d48.21673977922985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d073f4daba163%3A0xfce7699ce9a8b1f4!2zUHLDoXRlcg!5e0!3m2!1shu!2shu!4v1682686665469!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </div>
+        </div>
+
+        <div class="copyright">
+          <hr>
+          <p>Copyright © 2023 Szaki Webdesign</p>
+          <p>Möchten Sie eine ähnliche Website für Ihr Unternehmen? <br>Mehr Info: <a href=""> szakidesign.hu </a></p>
+        </div>
+      </section>
+
+      <script>
+
+        var navLinks = document.getElementById("navLinks");
+  
+        function showMenu() {
+          navLinks.style.right = "0";
+        }
+        function hideMenu() {
+          navLinks.style.right = "-400px";
+        }
+  
+      </script>
+
+  </body>
+
+</html>

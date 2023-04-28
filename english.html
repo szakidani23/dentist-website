@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="icon" type="image/x-icon" href="images/tooth.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/cb48e5d5ae.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Dental Clinic</title>
+  </head>
+  <body>
+      <!--0. SZEKCIÓ MENÜ HTML -->
+      <section id="header">
+        <nav class="navbar">
+          <a href="index.html"><img src="images/fehereslogo.png" class="logo"></a>
+          <div class="nav-links" id="navLinks">
+          <i class="fa fa-times hidemenu" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#section-3">Services</a></li>
+            <li><a href="#section-7">Prices</a></li>
+            <li><a href="#section-9">Contact</a></li>
+            <a href="index.html"><img src="images/hungary.png"></a>
+            <a href="german.html"><img src="images/germany.png"></a>
+            <a href="english.html"><img src="images/united-kingdom.png"></a>
+          </ul>
+        </div>
+        <i class="fa fa-bars showmenu" onclick="showMenu()"></i>
+        </nav>
+        
+        <!--1. Hero SZEKCIÓ HTML -->
+        <div class="hero">
+          <div class="hero-left">
+            <hr>
+            <h1>Smile with confidence!</h1>
+            <p><span>ATTENTION!</span> This is a website of a fictitious company.</p>
+            <p class="hero-left-text">Don't suffer with it, contact us instead and we will solve your toothache!</p>
+          </div>
+          <div class="hero-right">
+            <div class="contact-form">
+              <form action="form-handler.php" method="post">
+                <h4>Book an appointment!</h4>
+              <p>Fill in the form and we will call you back!</p>
+              <hr class="hr-line">
+              <input type="text" name="name" placeholder="Your name" required>
+              <input type="email" name="email" placeholder= "Your email" required>
+              <input type="tel" name="tel" placeholder="Phone number" required>
+              <input type="text" name="subject" placeholder="Which service? (for ex. Teeth whitening)" required>
+              <textarea name="message" rows="6" placeholder="Please briefly describe your complaint!"></textarea>
+              <div class="checkbox">
+                <span class="checkbox-text">I understand and accept the privacy notice!</span>
+                <input type="checkbox" id="adatkezelesiCheckbox" required>
+              </div>
+              <button class="cta-btn" type="submit"><i class="fa-solid fa-phone-volume fa-bounce fa-sm" style="color: #f5f5f5;"></i> Call me back! </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--2. Szájhigiénia Section HTML -->
+
+      <section id="section-2">
+        <div class="container">
+          <div class="left-col">
+            <img src="images/fogi.webp">
+            <img src="images/fogdokineni.webp">
+          </div>
+          <div class="right-col">
+            <h2>The importance of oral hygiene</h2>
+            <hr>
+            <p>
+              <span>The oral hygiene</span> is essential for healthy teeth. It is the cheapest and most effective way to prevent oral diseases. It prevents tooth decay, diseases caused by bacteria, premature ageing of teeth (periodontal disease) and gingivitis.
+              <br><br>
+              <span>Regular brushing</span> is unfortunately <span>is not the same as maintaining good oral hygiene.</span> Many people think that sticking a toothbrush on at night is enough, but it's not.
+              <br><span>You do need to visit the dentist from time to time!</span>
+            </p>
+          </div>
+        </div>
+        <div class="tel-cta">
+          <div class="left-col-tel-cta">
+            <h3>Do you have a dental problem?</h3>
+            <p>Maybe you just want to ask us something?</p>
+          </div>
+          <div class="right-col-tel-cta">
+            <button class="cta-btn">
+              <i class="fa-solid fa-phone-volume fa-bounce fa-sm" style="color: #f5f5f5;"></i>
+               Call now!
+              </button>
+          </div>
+        </div>
+      </section>
+
+      <!--3. Cards Section HTML -->
+
+      <section id="section-3">
+        <div class="title-div">
+          <h2>A solution for all dental problems</h2>
+          <hr class="hr-line">
+          <p>Choose your service and make an appointment!</p>
+        </div>
+        <div class="cards">
+          <div class="card-row">
+            <div class="card">
+              <img class="card-icon" src="images/icon1.png">
+              <h4>Dental implants</h4>
+              <p>A dental implant is actually an artificial root that replaces the root of a lost tooth. It actually resembles a screw, but once healed, it stays in place as firmly as your original teeth.</p>
+            </div>
+            <div class="card">
+              <img class="card-icon" src="images/icon2.png">
+              <h4>Cosmetic dentistry</h4>
+              <p>Cosmetic dentistry is an advanced version of aesthetic dentistry. It aims to create the ideal, perfect smile through the creation of flawless dentures. Cosmetic dentistry is a separate discipline with its own vision, methods and tools.</p>
+            </div>
+            <div class="card">
+              <img class="card-icon" src="images/icon3.png">
+              <h4>Root canal treatment</h4>
+              <p>A special dental procedure that is the last chance to save a diseased tooth. In this case, the tooth is already dead, but as a result of the treatment it can still remain a full-fledged part of the denture. Typical symptoms are inflammation of the tooth socket and severe pain, which can bring even those who are otherwise afraid of the dentist to the dental office.</p>
+            </div>
+          </div>
+          <div class="card-row">
+            <div class="card">
+              <img class="card-icon" src="images/icon4.png">
+              <h4>Teeth Whitening</h4>
+              <p>Teeth whitening is a chemical process in which the bleaching agent reacts with the substances that stain the teeth. The initiator in the bleaching agent is then activated by a UV light source. The chemical and optical properties of the tooth-colouring chromogens change as a result of oxidation, resulting in beautiful white teeth.</p>
+            </div>
+            <div class="card">
+              <img class="card-icon" src="images/icon5.png">
+              <h4>Dental X-rays</h4>
+              <p>Before any dental intervention, it is important that the dentist has adequate information about the current state of the patient's oral cavity so that he or she can make a correct diagnosis.
+
+                A thorough examination of the oral cavity is not always essential, as the problem is often located in the areas under the gums. X-rays are the best tool to detect this.</p>
+            </div>
+            <div class="card">
+              <img class="card-icon" src="images/icon6.png">
+              <h4>Orthodontics</h4>
+              <p>This is usually due to incorrect positioning of the teeth or jawbone. The treatment is not only aesthetic, as an irregular dentition can also contribute to a number of dental, speech and eating problems. This is why it is important to address the issue, either from the time of tooth replacement or in adulthood.</p>
+            </div>
+          </div>
+           <a class="buttonlink" href="#section-9"><button class="cta-btn cta-btn-time-schedule">
+            <i class="fa-solid fa-calendar-days fa-beat"></i>&nbsp;&nbsp;Book an appointment!
+          </button></a> 
+        </div>
+      </section>
+
+      <!--4. Feedback Section HTML -->
+
+      <section id="section-4">
+        <div class="title-div">
+          <h2>They have been here before</h2>
+          <hr class="hr-line">
+        </div>
+        <div class="feedbacks">
+          <div class="feedbacks-col1">
+            <div class="feedback-card-vertical">
+              <img src="images/akarki.webp">
+              <p>Simply a brilliant team. I had my teeth whitened. My teeth have been sparkling ever since! Thank you!</p>
+              <h4>Barbi</h4>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="feedbacks-col2">
+            <div class="feedback-card">
+              <div class="feedback-img-div">
+                <img src="images/debora.webp">
+              </div>
+              <div class="feedback-content-div">
+                <p>
+                  I went for SOS root canal treatment before my holiday. Thanks to them, I didn't have to spend the holiday with a swollen head. Thanks and kisses! Debi</p>
+                <h4>Debóra</h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="feedback-card">
+              <div class="feedback-img-div">
+                <img src="images/peter.webp">
+              </div>
+              <div class="feedback-content-div">
+                <p>I've been a regular guest to Dr. Fogdoki's office since a long time. After my orthodontic procedure was completed, we had a very nice result. You can see it in the picture. My teeth are finally nice and neat! Thanks and high fives! Peti</p>
+                <h4>Péter</h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="title-div">
+          <h3>Were you satisfied with us?</h3>
+          <p>Please share your experiences with us!</p>
+          <hr class="hr-line">
+          <div class="social-icons">
+            <a href="https://google.com" target="_blank"><i class="fa-brands fa-google"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!--5. About Us Section HTML -->
+
+      <section id="section-5">
+        <div class="icon-line">
+          <i class="fa-solid fa-tooth"></i>
+        </div>
+        <div class="about-us">
+          <div class="about-us-col1">
+            <h2>A few words about us</h2>
+            <p>We are a professional team of dentists, a friendly group of friends. Our story begins in 2008, when we graduated from university. We have grown from friends, teammates and colleagues. Of course, the once a month beer is still going strong. :) <br><br>
+              With more than 14 years of experience, we welcome our dear patients with professional dedication and friendliness.</p>
+            <hr>
+            <a href="https://www.youtube.com/watch?v=u2sv9nP_nH8" target="_blank"><i class="fa-brands fa-youtube"></i> Brushing tips - How to brush your teeth effectively!</a>
+            <img src="images/fehereslogo.png">
+          </div>     
+          <div class="about-us-col2">
+            <img src="images/hatter.webp">
+            <p>
+              Dr. Fogdoki</p>
+          </div>     
+        </div>
+      </section>
+      
+      <!--6. GALLERY Section HTML -->
+
+      <section id="section-6">
+        <div class="title-div">
+          <i class="fa-solid fa-teeth-open shaking-teeth"></i>
+          <h2>Moments at work</h2>
+          <hr class="hr-line">
+        </div>
+        <div class="image-slider-container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <img id="slide-1" src="images/1.webp">
+              <img id="slide-2" src="images/2.webp">
+              <img id="slide-3" src="images/3.webp">
+              <img id="slide-4" src="images/4.webp">
+              <img id="slide-5" src="images/6.webp">
+            </div>
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+              <a href="#slide-4"></a>
+              <a href="#slide-5"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--7. PriceList Section HTML -->
+
+      <section id="section-7">
+          <div class="prices-content">
+            <div class="title-div">
+              <h2>Pricelist</h2>
+              <h3 class="sub-title">Not only quality, but wallet friendly too!</h3>
+              <hr class="hr-line">
+              <p class="sub-text">Prices may vary depending on exchange rate changes!</p>
+            </div>
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">X-Ray</p>
+                <span></span>
+                <p class="detail-price">68 €</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Comprehensive: facial cavity, teleradiography, CT scan.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Filling</p>
+                <span></span>
+                <p class="detail-price">42 € / tooth</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Professional white filling.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Root canal treatment</p>
+                <span></span>
+                <p class="detail-price">82 € / Occasion</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">First, Second and Third channel teeth.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Implant - survey</p>
+                <span></span>
+                <p class="detail-price">41 €</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Assessment and consultation on implants and oral surgery.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Implant - test</p>
+                <span></span>
+                <p class="detail-price"> 87 € / Piece</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Genetic survey</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Implant - insertion</p>
+                <span></span>
+                <p class="detail-price">380 € / Piece </p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Preparation and insertion of a zirconium implant.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Dental plaque removal</p>
+                <span></span>
+                <p class="detail-price">55 €</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">For a complete set of teeth.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Fluoride dental treatment</p>
+                <span></span>
+                <p class="detail-price">32 €</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">optional extra additional treatment for tartar removal.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Orthodontics - survey</p>
+                <span></span>
+                <p class="detail-price">32 €</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Condition assessment for orthodontic treatment. The amount will then be deducted from the price of the orthodontic appliance.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Orthodontics - Impression taking</p>
+                <span></span>
+                <p class="detail-price">46 €</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Orthodontics - Activation</p>
+                <span></span>
+                <p class="detail-price">36 €</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Orthodontics - Bonding</p>
+                <span></span>
+                <p class="detail-price">43 €</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Removable device</p>
+                <span></span>
+                <p class="detail-price">250 €</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Removable braces optimised for one dental arch.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Bimaxillary device</p>
+                <span></span>
+                <p class="detail-price">315 €</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">In-office teeth whitening</p>
+                <span></span>
+                <p class="detail-price">115 €</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">ClearWhite Oxygen peroxide-free teeth whitening.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Wisdom tooth removal</p>
+                <span></span>
+                <p class="detail-price">55 €</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Basic, non-surgical removal.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Wisdom tooth removal</p>
+                <span></span>
+                <p class="detail-price">110 €</p>
+              </div>
+              <div class="detail-line-div">
+                <p class="detail-line">Second-level removal requiring surgical intervention.</p>
+              </div>
+            </div>
+
+            <div class="pricelist">
+              <div class="pricelist-line">
+                <p class="detail-title">Tooth extraction</p>
+                <span></span>
+                <p class="detail-price">50 € / tooth</p>
+              </div>
+            </div>   
+               <a class="buttonlink" href="#section-9"><button class="cta-btn cta-btn-time-schedule">
+                <i class="fa-solid fa-calendar-days fa-beat"></i>&nbsp;&nbsp;Book an appointment!
+              </button></a> 
+          </div>   
+      </section>
+
+      <!--8. FAQ Section HTML -->
+
+      <section id="section-8">
+        <div class="faq">
+          <div class="faq-left-col">
+            <h2>FAQ</h2>
+            <ul id="faq-table">
+              <li>
+                <label for="first">How long does the effect of whitening last?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="first" checked>
+                <div class="faq-answer">
+                  <p>It usually lasts for a year, but this is affected by dietary and other habits. For example, people who drink a lot of coffee or smoke will have their teeth discoloured sooner. Treatment can be repeated every six months.</p>
+
+                </div>
+              </li>
+
+              <li>
+                <label for="second">Is the implant safe?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="second">
+                <div class="faq-answer">
+                  <p>Yes, implantation is now a very advanced, proven technology.</p>
+
+                </div>
+              </li>
+
+              <li>
+                <label for="third">How do I make an appointment?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="third">
+                <div class="faq-answer">
+                  <p>Fill in the contact form or give us a call.<br><br>
+                    <a href="tel:+3612345678910">Click for calling us!</a></p>
+
+                </div>
+              </li>
+
+              <li>
+                <label for="fourth">How is tartar removed?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="fourth">
+                <div class="faq-answer">
+                  <p>The tartar is removed completely painlessly using ultrasonic equipment. The head of the device uses a vibration frequency of 27,000-37,000 Hz to imperceptibly remove the tartar from the tooth surface.
+                    The air bubbles created by the frequency also break up tartar that cannot be removed by conventional methods. This procedure does not damage the tooth enamel or the gum. Finally, a soft polishing brush is used to polish the teeth, giving them a shiny, smooth surface that makes it harder for dirt and tartar to adhere.
+                    This healthy condition can be maintained over time with regular and correct brushing techniques.</p>
+                </div>
+              </li>
+
+              <li>
+                <label for="fifth">How do I know if I have tartar teeth?<span>&#x3e</span> </label>
+                <input type="radio" name="faq" id="fifth">
+                <div class="faq-answer">
+                  <p>If you look in the mirror at the inside of your lower dental arch and see a yellowish or brown discolouration around the neck of the tooth, between teeth or elsewhere, it is most likely tartar.
+                    If you notice that your breath is not spotless, or that your teeth bleed when you brush, or even bleed spontaneously, in many cases these may also be due to tartar. If you have a lot of tartar, you may have small white pieces falling off, you may think that small pieces have broken off from one of your teeth, but it may actually be tartar that is breaking up and falling off. Tartar can hide in places where it is not visible at first glance. The persistent presence of tartar can cause gum inflammation, bleeding and premature tooth loss, so it's worth seeing a professional and having regular check-ups.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="faq-right-col">
+            <img src="images/7.webp">
+          </div>
+        </div>
+      </section>
+
+      <!--9. CONTACT Section HTML -->
+
+      <section id="section-9">
+        <div class="contact">
+          <div class="contact-left">
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
+            <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="contact-middle">
+            <h2>Contacts</h2>
+            <hr class="hr-contact">
+
+            <a href="tel:+3612345678910">
+            <div class="contact-line">
+              <div class="contact-icon">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Call us!</h4>
+                <p>+3612345678910</p>
+              </div>
+            </div>
+          </a>
+            
+            <a href="mailto:info@emailcím.hu">
+            <div class="contact-line">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope-open-text"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Text us!</h4>
+                <p>info@emailcím.hu</p>
+              </div>
+            </div>
+          </a>
+
+            <div class="contact-line">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Located at</h4>
+                <p>99 City Street, 1234</p>
+              </div>
+            </div>
+
+            <div class="contact-line">
+              <div class="contact-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Opening Hours</h4>
+                <p>Mo - Fri 08:00 - 17:00<br><br>Sa - Sun: Closed
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="contact-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5443382745666!2d-0.12181368423018868!3d51.5032287796344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c71a3d651f%3A0x72367f97712bc0ee!2sLondon%20Eye!5e0!3m2!1shu!2shu!4v1682243497236!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <hr>
+          <p>Copyright © 2023 Szaki Webdesign</p>
+          <p>Want a similar website for your business? <br>Visit here: <a href=""> szakidesign.hu </a></p>
+        </div>
+      </section>
+
+      <script>
+
+        var navLinks = document.getElementById("navLinks");
+  
+        function showMenu() {
+          navLinks.style.right = "0";
+        }
+        function hideMenu() {
+          navLinks.style.right = "-400px";
+        }
+  
+      </script>
+
+  </body>
+
+</html>

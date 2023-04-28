@@ -1,0 +1,780 @@
+
+/* 1. HERO SZEKCIÓ CSS */
+
+.hero {
+  display: flex;
+}
+/* BAL */
+.hero-left {
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 60%;
+}
+
+.hero-left hr{
+  width: 10%;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-bottom: 12px;
+}
+
+.hero-left h1 {
+  color: white;
+  margin-left: 5%;
+}
+
+.hero-left p {
+  color:white;
+  margin-left: 5%;
+}
+
+.hero-left p span {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.hero-left-text {
+  font-size: 24px;
+  width: 75%;
+}
+/* JOBB */
+.hero-right {
+  width: 40%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.contact-form {
+  background-color: #fff;
+  height: 100%;
+  width: 80%;
+  border-radius: 4%;
+  padding-top: 20px;
+}
+.contact-form h4,
+.contact-form p {
+  text-align: center;
+}
+
+
+.contact-form hr,
+.hr-line {
+  width: 50px;
+  margin: auto;
+  margin: 25px auto;
+  border: 1px solid #29d8db;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 70%;
+  margin: 10px 40px;
+  padding: 10px;
+  border: 1px solid rgb(225, 219, 219);
+  background-color: #FAFAFA;
+  outline: none;
+}
+
+.contact-form input:focus {
+  border: 1px solid #7a7a7a;
+}
+
+.checkbox {
+  display:flex;
+  margin: 10px 40px;
+}
+
+.checkbox span {
+  font-size: 12px;
+  width: 100%;
+}
+
+.checkbox input {
+  width: 18px;
+  height: 18px;
+}
+
+.contact-form button,
+.cta-btn {
+  padding: 12px 32px;
+  margin: 10px 40px;
+  color: #fff;
+  border:none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #29d8db 0%, #01578c 100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button:hover,
+.cta-btn:hover {
+ transform: scale(1.1);
+}
+
+/* Szájhigiénia SZEKCIÓ 2 CSS */
+
+.container {
+  display:flex;
+  align-items:flex-start;
+  padding: 10% 8%;
+  margin-bottom: -100px;
+}
+
+.left-col {
+  flex-basis: 40%;
+}
+
+.right-col {
+  flex-basis: 50%;
+  padding-left: 11%;
+  padding-top: 5%;
+}
+
+.right-col h2 {
+  width: 50%;
+}
+
+.right-col hr {
+  width: 15%;
+  margin: 3% 0;
+}
+
+.right-col p {
+  font-size: 17px;
+  width: 82%;
+}
+
+.right-col span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.left-col img {
+  height: auto;
+  max-width: 100%;
+  border:none;
+  border-radius: 16px;
+}
+
+.left-col img:nth-child(2) {
+  transform: translate(20%, -30%); 
+  border: 10px solid white;
+  border-radius: 16px;
+}
+/* CTA KÉK HÁTTERES SZEKCIÓ 2 CSS */
+.tel-cta {
+  display:flex;
+  margin:auto;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #01578c;
+  width: 75%;
+  padding: 60px 60px;
+  border-radius: 25px;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+
+.left-col-tel-cta {
+  flex-basis: 65%;
+  margin-left: 5%;
+}
+
+.left-col-tel-cta h3,
+.left-col-tel-cta p {
+  color: white;
+}
+
+.right-col-tel-cta {
+  flex-basis: 35%;
+}
+
+.right-col-tel-cta button {
+  border: 1px solid white;
+}
+
+/* Kártyák SZEKCIÓ 3 CSS */
+
+.title-div {
+  display:block;
+  text-align: center;
+  margin: 100px 0;
+}
+
+.cards h4{
+  margin-bottom: 30px;
+}
+
+.card {
+  display:block;
+  flex-basis: 50%;
+  margin: 20px;
+  padding: 50px 40px;
+  background-color: #f6f9f9;
+  border:none;
+  border-radius: 18px;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover{
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.12);
+}
+
+.card-row {
+  display:flex;
+  margin:0 12%;
+}
+
+.card-icon {
+  width: 14%;
+  height: auto;
+  padding: 15px 0;
+}
+
+.cta-btn-time-schedule {
+  display:flex;
+  margin: 40px auto;
+  align-items: center;
+}
+
+/* VÉLEMÉNY SZEKCIÓ 4 CSS */
+
+#section-4 {
+  background-color: #f6f9f9;
+  padding-top: 15px;
+}
+
+.feedbacks {
+  display:flex;
+  margin: 0 200px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.feedbacks img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.feedback-card-vertical,
+.feedback-card {
+  background-color: #fff;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  border: none;
+}
+
+.feedback-card-vertical {
+  display:block;
+  padding: 102px 50px;
+  width: 380px;
+}
+
+.feedback-card-vertical img,p,h4 {
+  margin-bottom: 18px;
+}
+
+.feedbacks i {
+  color: #f0ad4e;
+  border:none;
+}
+
+.feedback-img-div {
+  display:flex;
+}
+
+.feedback-content-div {
+  display: block;
+}
+
+.feedback-card {
+  display:flex;
+  align-items: center;
+  width: 500px;
+  padding: 25px 15px;
+  margin-bottom: 30px;
+}
+
+.feedbacks-col2 {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.social-icons {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 100px;
+}
+
+.social-icons a {
+  background-color: #29d8db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10%;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #0274be;
+}
+
+/* Rólunk SZEKCIÓ 5 CSS (i was rly tired when i made these line*/
+
+#section-5 {
+  background-color: #01578c;
+  width: 100%;
+}
+
+.icon-line {
+  display: inline-block;
+  border:none;
+  border-radius: 5% 5% 5% 45%;
+  margin: 40px 120px;
+}
+
+.icon-line i {
+  background-color: #f0f0f0;
+  font-size: 28px;
+  padding: 16px;
+  border:none;
+  border-radius: 5% 5% 5% 45%;
+  transition: color 0.5s, background-color 0.5s, animation 0.5s;
+}
+
+.icon-line i:hover {
+  color: white;
+  background-color: #29d8db;
+  animation: pulse 1.2s infinite;
+}
+
+  @keyframes pulse {
+    0% {
+      opacity: 0; /* Start with opacity 0 */
+      transform: scale(0.8); /* Start with a slightly smaller size */
+    }
+    50% {
+      opacity: 1; /* Increase opacity to 1 after 50% of the animation duration */
+      transform: scale(1.2); /* Increase size to 1.2 times after 50% of the animation duration */
+    }
+    100% {
+      opacity: 0; /* End with opacity 0 */
+      transform: scale(0.8); /* End with a slightly smaller size */
+    }
+  }
+
+.about-us {
+  display:flex;
+  align-items: center;
+}
+
+.about-us a {
+  text-decoration: none;
+  color: #BDBDBD;
+}
+
+.about-us i {
+  color: #ff6464;
+}
+
+.about-us h2,
+.about-us p {
+  color: #fff;
+}
+
+.about-us-col1 img {
+  max-width: 216px;
+  display:block;
+  margin: 40px 0;
+}
+
+.about-us hr {
+  width: 140px;
+  margin: 28px 0;
+  border: 1px solid #29d8db;
+}
+
+.about-us-col1 {
+  margin-left: 120px;
+  display: block;
+  flex-basis: 45%;
+}
+
+.about-us-col1 p {
+  line-height: 26px;
+}
+
+.about-us-col1 h2 {
+  margin-bottom: 40px;
+}
+
+.about-us-col1 a:hover {
+ color: white;
+}
+
+.about-us-col1 i:hover {
+  color:#29d8db;
+}
+
+.about-us-col2 {
+  display: block;
+  text-align: center;
+  flex-basis: 60%;
+}
+
+.about-us-col2 img {
+  width: 70%;
+  border-radius: 3% 3% 3% 40%;
+  max-width: 100%;
+}
+
+/* GALÉRIA SZEKCIÓ 6 CSS */
+
+.shaking-teeth {
+  background-color: #f0f0f0;
+  font-size: 28px;
+  padding: 16px;
+  border:none;
+  border-radius: 5% 5% 5% 45%;
+  margin-bottom: 20px;
+  transition: color 0.5s, background-color 0.5s, animation 0.5s;
+}
+
+.shaking-teeth:hover {
+  color: white;
+  background-color: #29d8db;
+  animation: shake 0.3s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.image-slider-container {
+  padding: 1rem;
+  margin-top: -3rem;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display:flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit:cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+/* ÁRLISTA SZEKCIÓ 7 CSS */
+
+#section-7 {
+  background-image: linear-gradient(0deg, rgb(237, 237, 237), rgba(255, 255, 255, 0.84)), url(images/bg-2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding: 2rem 0;
+}
+
+.sub-title {
+  font-weight: 600;
+}
+
+.sub-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+
+.pricelist {
+  display:block;
+  text-align:center;
+}
+
+.pricelist-line {
+  display:flex;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+
+.pricelist-line span {
+  border-bottom-style: dotted;
+  border-bottom-width: 2px;
+  border-bottom-color: #54595f;
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 1px
+}
+
+.detail-title,
+.detail-price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #54595f;
+}
+
+.detail-line-div {
+  display:flex;
+  justify-content: left;
+  text-align:left;
+  margin:auto;
+  width: 60%;
+}
+
+.detail-line {
+  color:#01578c;
+  font-size: 14px;
+}
+
+/* FAQ SZEKCIÓ 8 CSS */
+
+.faq {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.faq-left-col h2 {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.faq-right-col img {
+  width: 90%;
+  border:none;
+  border-radius: 16px;
+  margin: 5rem 7rem 0 0;
+  animation: buzzing 2s infinite alternate;
+}
+
+@keyframes buzzing {
+  0% {
+    transform: translateY(0) rotateZ(0);
+  }
+  100% {
+    transform: translateY(80px) rotateZ(0deg);
+  }
+}
+
+.faq-left-col {
+  margin: 3rem 5rem 3rem 9rem;
+}
+
+#faq-table li {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+#faq-table li label {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#faq-table li label:hover {
+  color:#01578c;
+}
+
+#faq-table li label span {
+  transform: rotate(90deg);
+  font-size: 22px;
+  color: #4a4a4a
+}
+
+#faq-table li label span:hover{
+  color:#01578c;
+}
+
+.faq-answer a {
+  text-decoration:none;
+}
+
+#faq-table label + input[type="radio"] {
+  display: none;
+}
+
+#faq-table .faq-answer {
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+#faq-table label + input[type="radio"]:checked + .faq-answer {
+  max-height: 400px;
+}
+
+/* CONTACT SZEKCIÓ 9 CSS */
+
+#section-9 {
+  background-image: linear-gradient(180deg,#6ec1e4 0%, #01578c 100%);
+  z-index: -2;
+}
+
+.contact {
+  display:flex;
+  align-items: center;
+  padding: 60px 0;
+  justify-content: center;
+}
+
+.contact-left {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  height: 50vh;
+  width: 4rem;
+  background: #01578c;
+  justify-content: center;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.contact-left i {
+  font-size:18px;
+  color: #e1dddd;
+  cursor:pointer;
+  margin:1rem 0;
+}
+
+.contact-left i:hover{
+  color:#fff;
+}
+
+.contact a {
+  text-decoration: none;;
+}
+
+.contact-middle {
+  background-color: #fff;
+  padding: 40px;
+  border:none;
+  border-radius: 16px;
+  display: block;
+  box-shadow: 30px 4px 30px 0px rgba(0, 0, 0, 0.3);
+  z-index:2;
+}
+
+.contact-middle hr {
+  margin-bottom: 18%;
+}
+
+.contact-line {
+  display:flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.contact-icon {
+  background-color:#6ec1e4;
+  padding: 16px 20px;
+  border:none;
+  border-radius: 50%;
+}
+
+.contact-icon i {
+  color: #fff;
+  font-size: 18px;
+}
+
+.contact-text {
+  display: block;
+  line-height: 10px;
+  margin-top: 1.5rem;
+}
+
+.contact-right {
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.copyright {
+  display:flex;
+  flex-direction: column;
+  text-align:center;
+  padding-bottom: 10px;
+}
+
+.copyright hr {
+  margin-bottom: 16px;
+}
+
+.copyright p {
+  color:white;
+  line-height:0;
+}
+
+.copyright a {
+  text-decoration: none;
+  color:#29d8db
+}
